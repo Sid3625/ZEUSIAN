@@ -6,6 +6,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Login</title>
         <link rel="stylesheet" href="css/login.css" />
+        <script type="text/javascript">
+            function callvalue(){
+
+                var state=document.getElementById("state").value;
+                var district3=document.getElementById("district3").value;
+                var Username=document.getElementById("Username").value;
+                var password=document.getElementById("password").value;
+                document.writeln("User Information:  "+"<br>"+"state: " +state +"<br>" );
+                document.writeln("district: " +district3 +"<br>" );
+                document.writeln("Username: " +Username +"<br>" );
+                document.writeln("Userpassword: " +password +"<br>" );
+
+
+            }
+            function previewPassword ()  {
+                var x = document.getElementById("password");
+                        if (x.type === "password") {
+                            x.type = "text";
+                        } else {
+                            x.type = "password";
+                        }
+            };
+
+        </script>
+
     </head>
     <body>
         <nav>
@@ -14,7 +39,7 @@
         <div class="login-container">
             <img src="back.svg" class="back-icon" />
             <h1>Log in with Quantum</h1>
-            <form>
+            <form onsubmit="callvalue" >
                 <div class="radio">
                     <input name="radio1" type="radio" id="district"  checked/>
                     <label for="district">District</label>
@@ -32,14 +57,14 @@
                 </div>
                 <div class="select">
                     <label for="district2">District*</label>
-                    <select name="district" id="district2">
+                    <select name="district" id="district3">
                         <option value="Maharashtra">Pune</option>
                         <option value="Goa">Jalgaon</option>
                         <option value="Gujarat">Nashik</option>
                     </select>
                 </div>
                 <div class="input">
-                    <input type="text" placeholder="Username/Email ID*" />
+                    <input type="text" placeholder="Username/Email ID*" id="Username" />
                     <p class="forget">FORGET USERNAME?</p>
                 </div>
                 <div class="input">
@@ -52,7 +77,7 @@
                     <label for="remember_me">Remember me</label>
                 </div>
                 <div class="submit">
-                    <button>LOG IN</button>
+                    <button onclick="callvalue()">LOG IN</button>
                 </div>
             </form>
         </div>
@@ -70,6 +95,6 @@
             </footer>
         </div>
 
-        <script src="index.js"></script>
+        <script src="index.js"></>
     </body>
 </html>
