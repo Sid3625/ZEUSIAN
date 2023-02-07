@@ -8,7 +8,19 @@ const previewPassword = () => {
         password_field.type = "password";
     }
 };
+const callvalue = () => {
 
+    var state=document.getElementById("state").value;
+    var district3=document.getElementById("district3").value;
+    var Username=document.getElementById("Username").value;
+    var password=document.getElementById("password").value;
+    document.writeln("User Information:  "+"<br>"+"state: " +state +"<br>" );
+    document.writeln("district: " +district3 +"<br>" );
+    document.writeln("Username: " +Username +"<br>" );
+    document.writeln("Userpassword: " +password +"<br>" );
+
+
+};
 // DASHBOARD
 const toggleBtn = document.querySelector(".hamburger-menu");
 const navLinks = document.querySelector(".navbar-nav");
