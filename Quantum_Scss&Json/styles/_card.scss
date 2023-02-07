@@ -1,0 +1,104 @@
+@import "./base";
+@import "./colors";
+
+.card {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    height: 246px;
+    padding: 0 24px;
+    background-color: #fff;
+    border-radius: 2px;
+    overflow: hidden;
+
+    .card-body {
+        position: relative;
+        display: flex;
+        padding: 0;
+        margin: 24px 0 0px;
+        /* line-height: 30px; */
+
+        .favourite {
+            position: absolute;
+            right: 0;
+        }
+
+        .displayImg {
+            width: 132px;
+            height: 157px;
+            object-fit: cover;
+        }
+
+        .card-desc {
+            margin-left: 15px;
+            margin-right: 20px;
+            width: 100%;
+        }
+
+        .card-name {
+            font-size: $fontMedium;
+            max-height: 45px;
+            // line-height: 20px;
+            font-weight: bold;
+            overflow: hidden;
+            margin-bottom: 7px;
+            width: 250px;
+        }
+
+        .card-text {
+            font-size: $fontSmall;
+            font-weight: bold;
+            color: $secondaryText;
+            margin-bottom: 3px;
+            /* line-height: 20px; */
+
+            .hr {
+                border-left: 1px solid $borderColor;
+                padding-left: 10px;
+                margin-left: 8px;
+            }
+
+            .bold {
+                color: $primaryText;
+            }
+
+            .green {
+                color: $darkGreen;
+            }
+        }
+
+        .select {
+            margin-bottom: 5px;
+            margin-top: 15px;
+
+            select {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .card-footer {
+        margin-top: 16px;
+        padding: 15px 20px 0px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid $borderColor;
+
+        a.disabled {
+            opacity: 0.4;
+        }
+    }
+
+    .expired {
+        @include flexCenter(center, center);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 18px;
+        background-color: $lightRed;
+        font-size: 12px;
+        font-weight: bold;
+        color: $red;
+        padding: 0 5px;
+    }
+}

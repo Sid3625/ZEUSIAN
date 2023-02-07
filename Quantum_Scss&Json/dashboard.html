@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dashboard</title>
+
+        <link rel="stylesheet" type="text/css" href="./styles/dashboard.css" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="#" class="nav-logo"><img src="./assets/icons/logo_header.svg" /></a>
+
+            <div>
+                <ul class="navbar-nav">
+                    <li class="navbar-item active">
+                        <a href="#" class="nav-link">DASHBOARD</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link">CONTENT</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link">USERS</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link">REPORTS</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link">ADMIN</a>
+                    </li>
+                </ul>
+
+                <ul class="alert-icons">
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link">
+                            <img src="./assets/icons/alerts.svg" />
+                            <span class="badge blue">2</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link">
+                            <img src="./assets/icons/announcements.svg" />
+                            <span class="badge blue">1</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link">
+                            <img src="./assets/icons/account_circle.svg" />
+                            <span class="badge white">T</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="hamburger-menu">
+                <img src="./assets/icons/hamburger-menu.svg" />
+            </button>
+        </nav>
+
+        <div class="dashboard-container">
+            <div class="menu">
+                <div class="menu-item active"><img src="./assets/icons/courses.svg" /><span>4</span> Courses</div>
+                <div class="menu-item"><img src="./assets/icons/classes.svg" /><span>4</span> Classes</div>
+            </div>
+            <div class="info">
+                <div class="total-course">Showing 4 of 4 courses</div>
+                <div class="sort-course">
+                    <p>Sort By:</p>
+                    <div class="sort">
+                        <select name="sort">
+                            <option value="Course Name">Course Name</option>
+                            <option value="Professors">Professors</option>
+                            <option value="Units">Number of Units</option>
+                        </select>
+                    </div>
+                    <img src="./assets/icons/sort.svg" />
+                </div>
+            </div>
+            <div class="grid-container"></div>
+        </div>
+
+        <div class="bottom-bar">
+            <div class="other-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <footer>
+                <img src="./assets/icons/logo_footer.svg" />
+                <p>Copyright © 2020-2021</p>
+                <p><b>Zeus Systems Pvt. Ltd.</b></p>
+                <p>All rights reserved.</p>
+            </footer>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>

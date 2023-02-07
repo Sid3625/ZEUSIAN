@@ -1,0 +1,53 @@
+
+
+body {
+    margin-top: 200px;
+}
+
+.avatar {
+    width: 130px;
+    height: 130px;
+    margin-left: 0px;
+}
+h3{
+    font-weight: bold;
+    
+}
+p{
+    font-weight: regular;
+}
+
+.card {
+    width: 390px;
+    height: 138px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border: 1px solid black;
+    
+
+    
+    column-gap:14px;
+
+}
+.sidd{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right:4px; 
+    
+}
+.image {
+    height: 20px;
+    width: 20px;
+    color: gray;      
+}
+.label {
+    font-size: 12px;   
+    margin-left: -20px;   
+    font-weight: medium;
+    color: grey;
+}
+
+
+
