@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>ZeusDashboard</title>
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="dashboard.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+        
+    </head>
+   
+
+    <body>
+
+        
+        <a href="#main-content" class="skip">Skip to main content</a>
+        
+        
+
+        <header>
+        
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Main Menu">
+                
+                <a href="#" class="navbar-brand"><img class="nav-logo" src="./assets/icons/logo_header.svg" alt="quantumLogo" /></a>
+
+                <div >
+                    <ul class="collapse navbar-collapse navbar-nav" id="navbar-nav1" role="menubar">
+                        <li class="navbar-item active">
+                            <a href="#" role="menuitem" class="nav-link">DASHBOARD</a>
+                        
+                        </li>
+                        <li id="l1" class="navbar-item navi">
+                            <a role="menuitem" onclick="arrowclick()" href="#" class="nav-link">CONTENT <i id="arrow" class="fa-solid fa-chevron-down "></i></a>
+                        
+                            <div id="content" class="dropdown-content">
+                                <a  class="anchor" href="#"> COURSE CATALOG</a>
+                                <a  class="anchor" href="#"> COURSE CATALOG</a>
+                            
+                            </div>
+                            
+                        </li>
+                        <li class="navbar-item">
+                            <a role="menuitem" href="#" class="nav-link">USERS <i  class="fa-solid fa-chevron-down"></i></a>
+            
+                        
+                            
+                        </li>
+                        <li class="navbar-item">
+                            <a  role="menuitem" href="#" class="nav-link">REPORTS <i class="fa-solid fa-chevron-down"></i></a>
+                        </li>
+                        <li class="navbar-item">
+                            <a  role="menuitem" href="#" class="nav-link">ADMIN <i class="fa-solid fa-chevron-down"></i></a>
+                        </li>
+                    </ul>
+
+                    <ul class="alert-icons">
+                        <li class="navbar-item">
+                            <div class="menu-button-links">
+                                <a href="#" id="n_img1" class="nav-link notificationic1"
+                                aria-labelledby="dropdown-contentss1" aria-haspopup="true" aria-expanded="false">
+                                    <img  id="n_img" src="./assets/icons/alerts.svg" alt="AlertIcon" />
+                                    <span id="notify" class="badge blue">2</span>
+                                </a>
+                                <div class="dropdown-contentss1" id="dropdown-contentss1"  role="menu" aria-labelledby="n_img1">
+                                    <div class="dropdown-btn">
+                                        <button>SHOW ALL</button>
+                                    </div>
+                                    <div class="messages">
+                                        <a class="nav-link bg-2 " href="#" role="menuitem" >
+                                            
+                                            <p  class="message1">
+                                                <span >License for Introduction to <i class="fa-solid fa-circle-minus float-right"></i> Algebra has been assign to your school</span> 
+                                                
+                                            </p>
+                    
+                                            <p class="greys">
+                                                
+                                            <span class="float-right">15-Sep-2018 at 07:21 pm</span>
+                                            </p>
+                                        </a>
+                                        <a class="nav-link" href="#" role="menuitem" >
+                                        
+                                            <p class="message1">Lesson 3 Pratice Worksheet overdue <i class="fa-solid fa-circle-check float-right"></i> for Amy Santiago</p>
+                                            <p class="grey">Course: Mathematics 101</p>
+                                            <p class="greys">
+                                                <span class="float-right">15-Sep-2018 at 07:21 pm</span>
+                                            </p>
+                                        </a>
+                                        <a class="nav-link bg-2" href="#" role="menuitem" >
+                                            
+                                            <p class="message1">23 New Students Created  <i class="fa-solid fa-circle-minus float-right"></i></p>
+                            
+                                            <p class="greys">
+                                                <span class="float-right">15-Sep-2018 at 07:21 pm</span>
+                                            </p>
+                                        </a>
+                                        <a class="nav-link bg-2" href="#" role="menuitem" >
+                                        
+                                            <p class="message1">15 submissions ready for evaluations <i class="fa-solid fa-circle-minus float-right"></i></p>
+                                            <p class="grey">Class: Basic of Algebra</p>
+                                            <p class="greys">
+                                                <span class="float-right">15-Sep-2018 at 07:21 pm</span>
+                                            </p>
+                                        </a>
+                                        <a class="nav-link bg-2" href="#" role="menuitem" >
+                                        
+                                            <p class="message1">License for Introduction to <i class="fa-solid fa-circle-minus float-right"></i> Geometry has been assign to your school  </p>
+                                            <p class="greys">
+                                            <span class="float-right">15-Sep-2018 at 07:21 pm</span>
+                                            </p>
+                                        </a>
+                                        <a class="nav-link " href="#" role="menuitem" >
+                                            
+                                            <p class="message1">Lesson 3 Pratice Worksheet overdue <i class="fa-solid fa-circle-check float-right"></i> for Sam Diego</p>
+                                            <p class="grey">Course:Advanced Mathematics</p>
+                                            
+                                        
+                                            <p class="greys">
+                                                <span class="float-right">15-Sep-2018 at 07:21 pm</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="navbar-item">
+                            <div class="menu-button-links">
+                                <a href="#" id="a_img1" class="nav-link notificationic"
+                                aria-labelledby="dropdown-contentss" aria-haspopup="true" aria-expanded="false" >
+                                    <img id="a_img" src="./assets/icons/announcements.svg" alt="AnnouncementIcon"/>
+                                    <span id="notify1" class="badge blue">1</span>
+                                </a>
+                                <div class="dropdown-contentss" id="dropdown-contentss" role="menu" aria-labelledby="a_img1">
+                                    <div class="dropdown-btn">
+                                        <button>SHOW ALL</button><button class="border-left">CREATE NEW</button>
+                                    </div>
+                                    <div class="messages">
+                                        <a class="nav-link" href="#" role="menuitem">
+                                            <p>
+                                                <span class="grey">PA:</span> Wilson Kumar
+                                                <i class="fa-solid fa-circle-check float-right"></i>
+                                            </p>
+                                            <p class="message">No classes will be held on 21st Nov</p>
+                                            <p class="greys">
+                                                <i class="fa-solid fa-paperclip"></i>
+                                                2 files are attached<span class="float-right">15-Sep-2018 at 07:21 pm</span>
+                                            </p>
+                                        </a>
+                                        <a class="nav-link bg-2" href="#" role="menuitem">
+                                            <p>
+                                                <span class="grey">PA:</span> Samson White
+                                                <i class="fa-solid fa-circle-minus float-right"></i>
+                                            </p>
+                                            <p class="message">Guest lecture on Geometry on 20th September</p>
+                                            <p class="greys">
+                                                <i class="fa-solid fa-paperclip"></i>
+                                                2 files are attached<span class="float-right">15-Sep-2018 at 07:21 pm</span>
+                                            </p>
+                                        </a>
+                                        <a class="nav-link" href="#" role="menuitem">
+                                            <p>
+                                                <span class="grey">PA:</span> Wilson Kumar
+                                                <i class="fa-solid fa-circle-check float-right"></i>
+                                            </p>
+                                            <p class="message">Additional course materials available on request</p>
+                                            <p class="grey">Course: Mathematics 101</p>
+                                            <p class="greys">
+                                                <span class="float-right">15-Sep-2018 at 07:21 pm</span>
+                                            </p>
+                                        </a>
+                                        <a class="nav-link bg-2" href="#" role="menuitem">
+                                            <p>
+                                                <span class="grey">PA:</span> Wilson Kumar
+                                                <i class="fa-solid fa-circle-minus float-right"></i>
+                                            </p>
+                                            <p class="message">No classes will be held on 25th Dec</p>
+                                            <p class="greys">
+                                                <span class="float-right">15-Sep-2018 at 07:21 pm</span>
+                                            </p>
+                                        </a>
+                                        <a class="nav-link bg-2" href="#" role="menuitem">
+                                            <p>
+                                                <span class="grey">PA:</span> Samson White
+                                                <i class="fa-solid fa-circle-minus float-right"></i>
+                                            </p>
+                                            <p class="message">Guest lecture on Geometry on 20th September</p>
+                                            <p class="greys">
+                                                <i class="fa-solid fa-paperclip"></i>
+                                                2 files are attached<span class="float-right">15-Sep-2018 at 07:21 pm</span>
+                                            </p>
+                                        </a>
+                                        <a class="nav-link bg-2" href="#" role="menuitem">
+                                            <p>
+                                                <span class="grey">PA:</span> Samson White
+                                                <i class="fa-solid fa-circle-minus float-right"></i>
+                                            </p>
+                                            <p class="message">Guest lecture on Geometry on 20th September</p>
+                                            <p class="greys">
+                                                <i class="fa-solid fa-paperclip"></i>
+                                                2 files are attached<span class="float-right">15-Sep-2018 at 07:21 pm</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#" class="nav-link">
+                                <img src="./assets/icons/account_circle.svg" alt="ProfileIcon" aria-label="Show User Profile"/>
+                                <span class="badge white" aria-hidden="true">T</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-label="open main menu" aria-expanded="false">
+                    <img id="hamburger" class="hamburgerimg" src="./assets/icons/hamburger-menu.svg" alt="hamburgerbutton" />
+                </button>
+            </nav>
+        </header>
+
+        
+        <main id="main-content">
+            <div  class="dashboard-container" role="main"  >
+                <div class="menu">
+                    <button class="menu-item active"><img src="./assets/icons/courses.svg" alt="courseImage"/><span>4</span> Courses</button>
+                    <button class="menu-item"><img src="./assets/icons/classes.svg" alt="classImage" /><span>4</span> Classes</button>
+                </div>
+                <div class="info">
+                    <div class="total-course">Showing 4 of 4 courses</div>
+                    <div class="sort-course menu-button-links" >
+                        <p id="sort1">Sort By:</p>
+                        <div class="sort" role="menu" aria-labelledby="sort1">
+                            <select name="sort">
+                                <option  role="menuitem" value="Course Name">Course Name</option>
+                                <option role="menuitem" value="Professors">Professors</option>
+                                <option role="menuitem" value="Units">Number of Units</option>
+                            </select>
+                        </div>
+                        <img src="./assets/icons/sort.svg" alt="arrowIcon"/>
+                    </div>
+                </div>
+                <div id="parent" class="grid-container">
+
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="bottom-bar">
+            <div class="other-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="footerelem">
+                <img src="./assets/icons/logo_footer.svg"alt="footerlogo" />
+                <p>Copyright © 2020-2021</p>
+                <p><b>Zeus Systems Pvt. Ltd.</b></p>
+                <p>All rights reserved.</p>
+
+            </div>
+    
+        </footer>
+        
+
+        
+
+        <script src="./index.js"></script>
+        <script src="./accessibile.js"></script>
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+    
+    </body>
+</html>
