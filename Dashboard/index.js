@@ -83,6 +83,55 @@ function arrowclick() {
 //         notifi_icon.style.filter ="none";
 //     }
 // }
+
+const menuItems = document.querySelectorAll('.nav-link');
+
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    
+    menuItems.forEach(otherItem => {
+      if (otherItem !== item && otherItem.classList.contains('open')) {
+        otherItem.classList.remove('open');
+        hide();
+        // show();
+      }
+    });
+
+    item.classList.toggle('open');
+  });
+})
+
+function hide(){
+    var div1= document.getElementById("dropdown-contentss");
+    let annou_icon = document.getElementById("a_img");
+    let notifi = document.getElementById("notify1");
+    var divs= document.getElementById("dropdown-contentss1");
+    let notifi_icon = document.getElementById("n_img");
+    let notifi1 = document.getElementById("notify");
+    
+    
+    if(div1.classList.contains("seen")){
+        div1.classList.remove("seen");
+        
+    
+        notifi.className = "badge blue";
+        // notifi.className = "pending";
+        annou_icon.style.filter ="none";
+
+    }else{
+        divs.classList.remove("show");
+        // divs.setAttribute('aria-expanded','false');
+        
+    
+        notifi1.className = "badge blue";
+        // notifi.className = "pending";
+        notifi_icon.style.filter ="none";
+
+    }
+}
+
+
+
 let notifi_icon = document.getElementById("n_img1");
 
 notifi_icon.addEventListener("click", () => {
@@ -92,8 +141,9 @@ notifi_icon.addEventListener("click", () => {
     let notifi = document.getElementById("notify");
     
     
-    if(divs.classList.contains("show")){
+    if(divs.classList.contains("show") ){
         divs.classList.remove("show");
+        // divs.setAttribute('aria-expanded','false');
         
     
         notifi.className = "badge blue";
@@ -104,11 +154,11 @@ notifi_icon.addEventListener("click", () => {
         divs.classList.add("show");
        
 
-    if(notifi.className === "badge blue"){
-        // notifi.className = "show_noti";
-        notifi.className = "seen";
-        notifi_icon.style.filter = "brightness(0) invert(1)";    
-    }
+        if(notifi.className === "badge blue"){
+            // notifi.className = "show_noti";
+            notifi.className = "seen";
+            notifi_icon.style.filter = "brightness(0) invert(1)";    
+        }
 
     }
 
@@ -133,6 +183,7 @@ notifi_icon.addEventListener("click", () => {
 //         notifi_icon.style.filter ="none";
        
 // }
+
 
 let annou_icon = document.getElementById("a_img1");
 
