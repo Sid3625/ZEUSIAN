@@ -6,6 +6,77 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Login</title>
         <link rel="stylesheet" href="css/login.css" />
+    </head>
+    <body>
+        <nav>
+            <img class="nav-logo" src="logo_header.svg" alt="Quantum Header logo" />
+        </nav>
+        <main class="content-body">
+            <!-- <section class="login-container" aria-labelledby="login_heading"> -->
+                <div class="login-container">
+                    <img src="back.svg" class="back-icon" alt="back button"/>
+                    <h1  class="login_heading" id="login_heading">Log in with Quantum</h1>
+                    <div class="loginMain">
+                        <form onsubmit="callvalue"  aria-labelledby="login_heading" >
+                            <div class="radio">
+                                <input name="radio1" type="radio"  autofocus id="district" checked/>
+                                <label for="district">District</label>
+
+                                <input name="radio1" type="radio" id="school" />
+                                <label for="school">Independent School</label>
+                            </div>
+                            <div class="select">
+                                <label for="state">State*</label>
+                                <select name="state" id="state">
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Goa">Goa</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                </select>
+                            </div>
+                            <div class="select">
+                                <label for="district2">District*</label>
+                                <select name="district" id="district3">
+                                    <option value="Maharashtra">Pune</option>
+                                    <option value="Goa">Jalgaon</option>
+                                    <option value="Gujarat">Nashik</option>
+                                </select>
+                            </div>
+                            <div class="input">
+                                <input type="text" placeholder="Username/Email ID*" id="Username" />
+                                <p class="forget">FORGET USERNAME?</p>
+                            </div>
+                            <div class="input">
+                                <input type="password" placeholder="Password*" id="password" />
+                                <p class="forget">FORGET PASSWORD?</p>
+                                <img src="preview.svg" class="preview-icon" role="button" aria-label="Show Password"  onclick="previewPassword()" alt="preview-button"/>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="remember_me" />
+                                <label for="remember_me">Remember me</label>
+                            </div>
+                            <div class="submit">
+                                <button onclick="callvalue()">LOG IN</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            <!-- </section> -->
+        </main>
+        
+        <div class="bottom-bar">
+            <div class="other-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <footer>
+                <img src="logo_footer.svg" alt="Quantum Footer logo"/>
+                <p>Copyright © 2020-2021</p>
+                <p><b>Zeus Systems Pvt. Ltd.</b></p>
+                <p>All rights reserved.</p>
+            </footer>
+        </div>
+
+        <script src="index.js"></script>
         <script type="text/javascript">
             function callvalue(){
 
@@ -30,71 +101,5 @@
             };
 
         </script>
-
-    </head>
-    <body>
-        <nav>
-            <img class="nav-logo" src="logo_header.svg" alt="" />
-        </nav>
-        <div class="login-container">
-            <img src="back.svg" class="back-icon" />
-            <h1>Log in with Quantum</h1>
-            <form onsubmit="callvalue" >
-                <div class="radio">
-                    <input name="radio1" type="radio" id="district"  checked/>
-                    <label for="district">District</label>
-
-                    <input name="radio1" type="radio" id="school" />
-                    <label for="school">Independent School</label>
-                </div>
-                <div class="select">
-                    <label for="state">State*</label>
-                    <select name="state" id="state">
-                        <option value="Maharashtra">Maharashtra</option>
-                        <option value="Goa">Goa</option>
-                        <option value="Gujarat">Gujarat</option>
-                    </select>
-                </div>
-                <div class="select">
-                    <label for="district2">District*</label>
-                    <select name="district" id="district3">
-                        <option value="Maharashtra">Pune</option>
-                        <option value="Goa">Jalgaon</option>
-                        <option value="Gujarat">Nashik</option>
-                    </select>
-                </div>
-                <div class="input">
-                    <input type="text" placeholder="Username/Email ID*" id="Username" />
-                    <p class="forget">FORGET USERNAME?</p>
-                </div>
-                <div class="input">
-                    <input type="password" placeholder="Password*" id="password" />
-                    <p class="forget">FORGET PASSWORD?</p>
-                    <img src="preview.svg" class="preview-icon" onclick="previewPassword()" />
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" id="remember_me" />
-                    <label for="remember_me">Remember me</label>
-                </div>
-                <div class="submit">
-                    <button onclick="callvalue()">LOG IN</button>
-                </div>
-            </form>
-        </div>
-        
-        <div class="bottom-bar">
-            <div class="other-links">
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </div>
-            <footer>
-                <img src="logo_footer.svg" />
-                <p>Copyright © 2020-2021</p>
-                <p><b>Zeus Systems Pvt. Ltd.</b></p>
-                <p>All rights reserved.</p>
-            </footer>
-        </div>
-
-        <script src="index.js"></>
     </body>
 </html>

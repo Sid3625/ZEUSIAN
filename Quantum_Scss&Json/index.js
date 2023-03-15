@@ -29,6 +29,14 @@ const gridContainer = document.querySelector(".grid-container");
 toggleBtn.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
+// window.onclick = function(e) {
+//     if (!e.target.matches('.hamburger-menu')) {
+//     var myDropdown = document.getElementById("navbar-nav");
+//       if (myDropdown.classList.contains('show')) {
+//         myDropdown.classList.remove('show');
+//       }
+//     }
+//   }
 
 async function getCards() {
     const response = await fetch("./courses.json");
